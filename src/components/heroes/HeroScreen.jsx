@@ -1,3 +1,16 @@
+import React from 'react'
+
+//Paso 1.3
+const HeroScreen = () => {
+  return (
+    <div>
+      <h1>Heroscreen</h1>
+    </div>
+  )
+}
+
+export default HeroScreen
+
 // import React, { useMemo } from 'react';
 // import { useParams, Redirect } from 'react-router-dom';
 // import { getHeroById } from '../../selectors/getHeroById';

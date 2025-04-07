@@ -1,3 +1,16 @@
+import React from 'react'
+
+//Paso 1.4
+const LoginScreen = () => {
+    return (
+        <div>
+            <h1>Login screen</h1>
+        </div>
+    )
+}
+
+export default LoginScreen
+
 // import React from 'react'
 
 // export const LoginScreen = ({ history }) => {

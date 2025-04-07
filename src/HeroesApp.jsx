@@ -1,9 +1,11 @@
 import React from 'react'
+import { AppRouter } from './routers/AppRouter'
 
-const HeroesApp = () => (
-    <div>
-        <h1>HeroesApp</h1>
-    </div>
-)
+const HeroesApp = () => {
+    return (
+        <AppRouter />
+    );
+}
+
 
 export default HeroesApp
