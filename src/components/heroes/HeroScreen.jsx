@@ -56,6 +56,8 @@ export const HeroScreen = () => {
           <li className="list-group-item"><b>Affiliation:</b> {affiliation}</li>
           <li className="list-group-item"><b>Publisher:</b> {publisher}</li>
           <li className="list-group-item"><b>First appearance:</b> {first_appearance}</li>
+          <li className="list-group-item"><b>Role:</b> {role}</li>
+          <li className="list-group-item"><b>Specie:</b> {species}</li>
         </ul>
 
         <h5>Alias</h5>

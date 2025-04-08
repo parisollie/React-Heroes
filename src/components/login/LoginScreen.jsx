@@ -19,7 +19,7 @@ export const LoginScreen = () => {
         dispatch({
             type: types.login,
             payload: {
-                name: 'Juan Pablo'
+                name: 'Paullie'
             }
         });
 
@@ -28,12 +28,6 @@ export const LoginScreen = () => {
         navigate('/', { replace: true }); // Equivalente a history.replace
 
     }
-
-
-
-
-
-
 
 
     return (

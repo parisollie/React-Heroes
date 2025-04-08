@@ -23,7 +23,7 @@ export const DashboardRoutes = () => {
 
 
                     {/* Redirección */}
-                    <Route path="*" element={<Navigate to="/marvel" replace />} />
+                    <Route path="*" element={<Navigate to="/protagonists" replace />} />
                 </Routes>
             </div>
 

@@ -1,0 +1,13 @@
+body {
+    background-image: url('../assets/BG/Forks.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#root {
+    min-height: 100vh;
+    background-color: rgba(66, 64, 64, 0.1);
+    /* Oscurece fondo para mejor contraste */
+    background-blend-mode: multiply;
+}

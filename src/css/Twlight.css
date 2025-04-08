@@ -1,0 +1,8 @@
+.tw-container {
+    background-image: url('../assets/BG/Forks.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+}
