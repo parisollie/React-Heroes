@@ -26,7 +26,7 @@ export const Navbar = () => {
             <div className="container-fluid d-flex align-items-center w-100" style={{ display: 'flex' }}>
 
                 {/* IZQUIERDA: LOGOS */}
-                <div className="d-flex align-items-center justify-content-start" style={{ flex: '1', gap: '250px' }}>
+                <div className="d-flex align-items-center justify-content-start" style={{ flex: '1', gap: '350px' }}>
                     <img src="/assets/lunas/logo1.png" alt="Logo1" style={{ height: '90px' }} />
                     <img src="/assets/lunas/logo2.png" alt="Logo2" style={{ height: '90px' }} />
                 </div>
@@ -79,47 +79,57 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                {/* DERECHA: LOGOS + USUARIO */}
-                <div className="d-flex align-items-center justify-content-end" style={{ flex: '1', gap: '250px' }}>
-                    <img src="/assets/lunas/logo3.png" alt="Logo3" style={{ height: '90px' }} />
-                    <img src="/assets/lunas/logo4.png" alt="Logo4" style={{ height: '90px' }} />
-
-
+                {/* IZQUIERDA: LOGOS */}
+                <div className="d-flex align-items-center justify-content-start" style={{ flex: '1', gap: '365px' }}>
+                    <img src="/assets/lunas/logo3.png" alt="Logo3" style={{ height: '80px' }} />
+                    <img src="/assets/lunas/logo4.png" alt="Logo4" style={{ height: '85px' }} />
                 </div>
 
-                <span className="nav-item nav-link text-white" style={{
-                    background: 'rgba(0, 136, 169, 0.3)',
-                    borderRadius: '20px',
-                    padding: '5px 15px',
-                    border: '1px solid rgba(255, 255, 255, 0.1)'
-                }}>
-                    {name}
-                </span>
 
-                <button className="nav-item nav-link btn"
-                    onClick={() => {
-                        navigate('/login', { replace: true });
-                        dispatch({ type: types.logout });
-                    }}
-                    style={{
-                        background: 'rgba(220, 53, 69, 0.3)',
-                        color: 'rgba(255, 255, 255, 0.8)',
+
+
+
+                {/* DERECHA: LOGOS + USUARIO + LOGOUT */}
+                <div className="d-flex align-items-center justify-content-end" style={{ flex: '1', gap: '10px' }}>
+
+
+                    <span className="nav-item nav-link text-white" style={{
+                        background: 'rgba(0, 136, 169, 0.3)',
                         borderRadius: '20px',
-                        border: '1px solid rgba(220, 53, 69, 0.4)',
-                        transition: 'all 0.3s ease',
-                        padding: '5px 15px'
-                    }}
-                    onMouseEnter={(e) => {
-                        e.target.style.background = 'rgba(220, 53, 69, 0.5)';
-                        e.target.style.color = '#fff';
-                    }}
-                    onMouseLeave={(e) => {
-                        e.target.style.background = 'rgba(220, 53, 69, 0.3)';
-                        e.target.style.color = 'rgba(255, 255, 255, 0.8)';
-                    }}
-                >
-                    Logout
-                </button>
+                        padding: '5px 15px',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                    }}>
+                        {name}
+                    </span>
+
+                    <button className="nav-item nav-link btn"
+                        onClick={() => {
+                            navigate('/login', { replace: true });
+                            dispatch({ type: types.logout });
+                        }}
+                        style={{
+                            background: 'rgba(220, 53, 69, 0.3)',
+                            color: 'rgba(255, 255, 255, 0.8)',
+                            borderRadius: '20px',
+                            border: '1px solid rgba(220, 53, 69, 0.4)',
+                            transition: 'all 0.3s ease',
+                            padding: '5px 15px'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.target.style.background = 'rgba(220, 53, 69, 0.5)';
+                            e.target.style.color = '#fff';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.background = 'rgba(220, 53, 69, 0.3)';
+                            e.target.style.color = 'rgba(255, 255, 255, 0.8)';
+                        }}
+                    >
+                        Logout
+                    </button>
+                </div>
+
+
+
             </div>
         </nav>
 
