@@ -19,7 +19,7 @@ export const Navbar = () => {
 
     return (
         <nav className="navbar navbar-expand-md navbar-dark" style={{
-            background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+            background: 'linear-gradient(135deg,rgb(17, 17, 19) 0%, #16213e 100%)',
             borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
             padding: '0.5rem 1rem'
         }}>
@@ -27,14 +27,14 @@ export const Navbar = () => {
 
                 {/* IZQUIERDA: LOGOS */}
                 <div className="d-flex align-items-center justify-content-start" style={{ flex: '1', gap: '250px' }}>
-                    <img src="/assets/twlight-navbar.png" alt="Logo1" style={{ height: '90px' }} />
-                    <img src="/assets/twlight-navbar.png" alt="Logo2" style={{ height: '90px' }} />
+                    <img src="/assets/lunas/logo1.png" alt="Logo1" style={{ height: '90px' }} />
+                    <img src="/assets/lunas/logo2.png" alt="Logo2" style={{ height: '90px' }} />
                 </div>
 
                 {/* CENTRO: MENÚ */}
                 <div className="d-flex justify-content-center" style={{ flex: '2' }}>
                     <div className="navbar-nav" style={{
-                        background: 'rgba(0, 0, 0, 0.4)',
+                        background: 'rgba(0, 136, 169, 0.4)',
                         borderRadius: '50px',
                         padding: '0 15px',
                         backdropFilter: 'blur(10px)',
@@ -80,44 +80,46 @@ export const Navbar = () => {
                 </div>
 
                 {/* DERECHA: LOGOS + USUARIO */}
-                <div className="d-flex align-items-center justify-content-end" style={{ flex: '1', gap: '90px' }}>
-                    <img src="/assets/twlight-navbar.png" alt="Logo3" style={{ height: '90px' }} />
-                    <img src="/assets/twlight-navbar.png" alt="Logo4" style={{ height: '90px' }} />
+                <div className="d-flex align-items-center justify-content-end" style={{ flex: '1', gap: '250px' }}>
+                    <img src="/assets/lunas/logo3.png" alt="Logo3" style={{ height: '90px' }} />
+                    <img src="/assets/lunas/logo4.png" alt="Logo4" style={{ height: '90px' }} />
 
-                    <span className="nav-item nav-link text-white" style={{
-                        background: 'rgba(0, 136, 169, 0.3)',
-                        borderRadius: '20px',
-                        padding: '5px 15px',
-                        border: '1px solid rgba(255, 255, 255, 0.1)'
-                    }}>
-                        {name}
-                    </span>
 
-                    <button className="nav-item nav-link btn"
-                        onClick={() => {
-                            navigate('/login', { replace: true });
-                            dispatch({ type: types.logout });
-                        }}
-                        style={{
-                            background: 'rgba(220, 53, 69, 0.3)',
-                            color: 'rgba(255, 255, 255, 0.8)',
-                            borderRadius: '20px',
-                            border: '1px solid rgba(220, 53, 69, 0.4)',
-                            transition: 'all 0.3s ease',
-                            padding: '5px 15px'
-                        }}
-                        onMouseEnter={(e) => {
-                            e.target.style.background = 'rgba(220, 53, 69, 0.5)';
-                            e.target.style.color = '#fff';
-                        }}
-                        onMouseLeave={(e) => {
-                            e.target.style.background = 'rgba(220, 53, 69, 0.3)';
-                            e.target.style.color = 'rgba(255, 255, 255, 0.8)';
-                        }}
-                    >
-                        Logout
-                    </button>
                 </div>
+
+                <span className="nav-item nav-link text-white" style={{
+                    background: 'rgba(0, 136, 169, 0.3)',
+                    borderRadius: '20px',
+                    padding: '5px 15px',
+                    border: '1px solid rgba(255, 255, 255, 0.1)'
+                }}>
+                    {name}
+                </span>
+
+                <button className="nav-item nav-link btn"
+                    onClick={() => {
+                        navigate('/login', { replace: true });
+                        dispatch({ type: types.logout });
+                    }}
+                    style={{
+                        background: 'rgba(220, 53, 69, 0.3)',
+                        color: 'rgba(255, 255, 255, 0.8)',
+                        borderRadius: '20px',
+                        border: '1px solid rgba(220, 53, 69, 0.4)',
+                        transition: 'all 0.3s ease',
+                        padding: '5px 15px'
+                    }}
+                    onMouseEnter={(e) => {
+                        e.target.style.background = 'rgba(220, 53, 69, 0.5)';
+                        e.target.style.color = '#fff';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.target.style.background = 'rgba(220, 53, 69, 0.3)';
+                        e.target.style.color = 'rgba(255, 255, 255, 0.8)';
+                    }}
+                >
+                    Logout
+                </button>
             </div>
         </nav>
 
