@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Navigate, useLocation } from 'react-router-dom';
 
+//Paso 3.17
 export const PublicRoute = ({
     isAuthenticated,
     component: Component

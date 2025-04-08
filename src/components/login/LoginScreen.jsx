@@ -13,9 +13,8 @@ export const LoginScreen = () => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-
+        //Paso 3.22
         const lastPath = localStorage.getItem('lastPath') || '/';
-
         //Paso 3.9
         dispatch({
             type: types.login,
