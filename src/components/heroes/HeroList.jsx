@@ -7,18 +7,18 @@ export const HeroList = ({ publisher }) => {
     //Paso 1.17
     //const heroes = getHeroesByPublisher(publisher);
     //Paso 2.3, usamos UseMemo, se dispara si el publisher cambia
-    const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
+    const twilightCharacters = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
 
     return (
         //V-487,Paso 1.20
         <div className="card-columns animate__animated animate__fadeIn">
             {
-                heroes.map(hero => (
+                twilightCharacters.map(tw => (
                     //Paso 1.22
                     <HeroCard
-                        key={hero.id}
+                        key={tw.id}
                         //Extrae cada una de las propiedades y son las que mandare
-                        {...hero}
+                        {...tw}
                     />
                 ))
             }

@@ -1,4 +1,4 @@
-import { heroes } from '../data/heroes';
+import { twilightCharacters } from '../data/crepusculo';
 
 //Pasp 1.15, descartarlo
 //Paso 4.26
@@ -9,6 +9,6 @@ export const getHeroesByName = (name = '') => {
     }
 
     name = name.toLocaleLowerCase();
-    return heroes.filter(hero => hero.superhero.toLocaleLowerCase().includes(name));
+    return twilightCharacters.filter(tw => tw.name.toLocaleLowerCase().includes(name));
 
 }

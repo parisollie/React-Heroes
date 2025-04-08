@@ -46,7 +46,7 @@ export const SearchScreen = () => {
                     <form onSubmit={handleSearch}>
                         <input
                             type="text"
-                            placeholder="Find your hero"
+                            placeholder="Find your character"
                             className="form-control"
                             name="searchText"
                             autoComplete="off"
@@ -77,7 +77,7 @@ export const SearchScreen = () => {
                         (q === '')
                         &&
                         <div className="alert alert-info">
-                            Search a hero
+                            Search a character
                         </div>
                     }
 
@@ -85,16 +85,16 @@ export const SearchScreen = () => {
                         (q !== '' && heroesFiltered.length === 0)
                         &&
                         <div className="alert alert-danger">
-                            There is no a hero with {q}
+                            There is no a character with {q}
                         </div>
                     }
 
                     {
                         //Paso 2.11
-                        heroesFiltered.map(hero => (
+                        heroesFiltered.map(tw => (
                             <HeroCard
-                                key={hero.id}
-                                {...hero}
+                                key={tw.id}
+                                {...tw}
                             />
                         ))
                     }

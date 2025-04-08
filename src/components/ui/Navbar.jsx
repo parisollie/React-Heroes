@@ -27,7 +27,7 @@ export const Navbar = () => {
                 className="navbar-brand"
                 to="/"
             >
-                Asociaciones
+                Twlight
             </Link>
 
             <div className="navbar-collapse">
@@ -37,18 +37,18 @@ export const Navbar = () => {
                         className={({ isActive }) =>
                             `nav-item nav-link ${isActive ? 'active' : ''}`
                         }
-                        to="/marvel"
+                        to="/protagonists"
                     >
-                        Marvel
+                        Protagonists
                     </NavLink>
 
                     <NavLink
                         className={({ isActive }) =>
                             `nav-item nav-link ${isActive ? 'active' : ''}`
                         }
-                        to="/dc"
+                        to="/antagonists"
                     >
-                        DC
+                        Villans
                     </NavLink>
                     {/**Paso 2.15 */}
                     <NavLink

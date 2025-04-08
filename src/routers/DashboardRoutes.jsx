@@ -16,9 +16,9 @@ export const DashboardRoutes = () => {
 
             <div className="container mt-2">
                 <Routes>
-                    <Route path="/marvel" element={<MarvelScreen />} />
-                    <Route path="/hero/:heroeId" element={<HeroScreen />} />
-                    <Route path="/dc" element={<DcScreen />} />
+                    <Route path="/protagonists" element={<MarvelScreen />} />
+                    <Route path="/tw/:twId" element={<HeroScreen />} />
+                    <Route path="/antagonists" element={<DcScreen />} />
                     <Route path="/search" element={<SearchScreen />} /> {/*Paso 2.16 */}
 
 

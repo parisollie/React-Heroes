@@ -6,10 +6,10 @@ const DcScreen = () => {
     return (
         //Paso 1.19
         <div>
-            <h1>DC Screen</h1>
+            <h1>Villans</h1>
             <hr />
 
-            <HeroList publisher="DC Comics" />
+            <HeroList publisher="Antagonists" />
 
         </div>
     )
