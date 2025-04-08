@@ -1,4 +1,3 @@
-//Bueno
 import React, { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../auth/AuthContext';
@@ -27,8 +26,28 @@ export const Navbar = () => {
 
                 {/* IZQUIERDA: LOGOS */}
                 <div className="d-flex align-items-center justify-content-start" style={{ flex: '1', gap: '350px' }}>
-                    <img src="/assets/lunas/logo1.png" alt="Logo1" style={{ height: '90px' }} />
-                    <img src="/assets/lunas/logo2.png" alt="Logo2" style={{ height: '90px' }} />
+                    <img
+                        src="/assets/lunas/logo1.png"
+                        alt="Logo1"
+                        style={{
+                            height: '90px',
+                            filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
+                            transition: 'filter 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
+                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                    />
+                    <img
+                        src="/assets/lunas/logo2.png"
+                        alt="Logo2"
+                        style={{
+                            height: '90px',
+                            filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
+                            transition: 'filter 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
+                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                    />
                 </div>
 
                 {/* CENTRO: MENÚ */}
@@ -81,13 +100,29 @@ export const Navbar = () => {
 
                 {/* IZQUIERDA: LOGOS */}
                 <div className="d-flex align-items-center justify-content-start" style={{ flex: '1', gap: '365px' }}>
-                    <img src="/assets/lunas/logo3.png" alt="Logo3" style={{ height: '80px' }} />
-                    <img src="/assets/lunas/logo4.png" alt="Logo4" style={{ height: '85px' }} />
+                    <img
+                        src="/assets/lunas/logo3.png"
+                        alt="Logo3"
+                        style={{
+                            height: '80px',
+                            filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
+                            transition: 'filter 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
+                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                    />
+                    <img
+                        src="/assets/lunas/logo4.png"
+                        alt="Logo4"
+                        style={{
+                            height: '85px',
+                            filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
+                            transition: 'filter 0.3s ease'
+                        }}
+                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
+                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                    />
                 </div>
-
-
-
-
 
                 {/* DERECHA: LOGOS + USUARIO + LOGOUT */}
                 <div className="d-flex align-items-center justify-content-end" style={{ flex: '1', gap: '10px' }}>
@@ -128,12 +163,7 @@ export const Navbar = () => {
                     </button>
                 </div>
 
-
-
             </div>
         </nav>
-
-
-
     )
 }
