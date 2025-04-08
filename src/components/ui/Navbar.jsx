@@ -1,13 +1,32 @@
-import React from 'react'
-//paso 1.2
-import { Link, NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../auth/AuthContext';
+import { types } from '../../types/types';
 
+//paso 1.2
 export const Navbar = () => {
+    //paso 3.10,extraemos el user
+    const { user: { name }, dispatch } = useContext(AuthContext);
+    //Paso 3.14 Cambia useHistory → useNavigate
+    const navigate = useNavigate();
+
+    //Paso 3.13
+    const handleLogout = () => {
+        //Paso 3.15 Cambia history.replace → navigate con replace: true
+        navigate('/login', { replace: true });
+
+        dispatch({
+            type: types.logout
+        });
+    };
+
+
+
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            
-            <Link 
-                className="navbar-brand" 
+
+            <Link
+                className="navbar-brand"
                 to="/"
             >
                 Asociaciones
@@ -16,17 +35,17 @@ export const Navbar = () => {
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
-                    <NavLink 
-                        className={({ isActive }) => 
+                    <NavLink
+                        className={({ isActive }) =>
                             `nav-item nav-link ${isActive ? 'active' : ''}`
-                        } 
+                        }
                         to="/marvel"
                     >
                         Marvel
                     </NavLink>
 
-                    <NavLink 
-                        className={({ isActive }) => 
+                    <NavLink
+                        className={({ isActive }) =>
                             `nav-item nav-link ${isActive ? 'active' : ''}`
                         }
                         to="/dc"
@@ -34,8 +53,8 @@ export const Navbar = () => {
                         DC
                     </NavLink>
                     {/**Paso 2.15 */}
-                    <NavLink 
-                        className={({ isActive }) => 
+                    <NavLink
+                        className={({ isActive }) =>
                             `nav-item nav-link ${isActive ? 'active' : ''}`
                         }
                         to="/search"
@@ -47,79 +66,21 @@ export const Navbar = () => {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
-                    <NavLink 
-                        className={({ isActive }) => 
-                            `nav-item nav-link ${isActive ? 'active' : ''}`
-                        }
-                        to="/login"
+
+                    {/**Paso 3.7 */}
+                    <span className="nav-item nav-link text-info">
+                        {name}
+                    </span>
+                    {/**V-500,Paso 3.12 */}
+                    <button
+                        className="nav-item nav-link btn"
+                        onClick={handleLogout}
                     >
                         Logout
-                    </NavLink>
+                    </button>
                 </ul>
             </div>
         </nav>
     )
 }
 
-
-// import React from 'react'
-// import { Link, NavLink } from 'react-router-dom'
-
-// export const Navbar = () => {
-//     return (
-//         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            
-//             <Link 
-//                 className="navbar-brand" 
-//                 to="/"
-//             >
-//                 Asociaciones
-//             </Link>
-
-//             <div className="navbar-collapse">
-//                 <div className="navbar-nav">
-
-//                     <NavLink 
-//                         activeClassName="active"
-//                         className="nav-item nav-link" 
-//                         exact
-//                         to="/marvel"
-//                     >
-//                         Marvel
-//                     </NavLink>
-
-//                     <NavLink 
-//                         activeClassName="active"
-//                         className="nav-item nav-link" 
-//                         exact
-//                         to="/dc"
-//                     >
-//                         DC
-//                     </NavLink>
-                    
-//                     <NavLink 
-//                         activeClassName="active"
-//                         className="nav-item nav-link" 
-//                         exact
-//                         to="/search"
-//                     >
-//                         Search
-//                     </NavLink>
-//                 </div>
-//             </div>
-
-//             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
-//                 <ul className="navbar-nav ml-auto">
-//                     <NavLink 
-//                         activeClassName="active"
-//                         className="nav-item nav-link" 
-//                         exact
-//                         to="/login"
-//                     >
-//                         Logout
-//                     </NavLink>
-//                 </ul>
-//             </div>
-//         </nav>
-//     )
-// }

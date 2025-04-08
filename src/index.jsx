@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import HeroesApp from './HeroesApp';
+import { HeroesApp } from './HeroesApp';
 
 createRoot(document.getElementById('root')).render(
 
