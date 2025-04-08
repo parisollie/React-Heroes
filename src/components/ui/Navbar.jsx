@@ -32,10 +32,17 @@ export const Navbar = () => {
                         style={{
                             height: '90px',
                             filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
-                            transition: 'filter 0.3s ease'
+                            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                            transform: 'scale(1)'
                         }}
-                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
-                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                        onMouseEnter={(e) => {
+                            e.target.style.transform = 'scale(1.1)';
+                            e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.transform = 'scale(1)';
+                            e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))';
+                        }}
                     />
                     <img
                         src="/assets/lunas/logo2.png"
@@ -43,10 +50,17 @@ export const Navbar = () => {
                         style={{
                             height: '90px',
                             filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
-                            transition: 'filter 0.3s ease'
+                            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                            transform: 'scale(1)'
                         }}
-                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
-                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                        onMouseEnter={(e) => {
+                            e.target.style.transform = 'scale(1.1)';
+                            e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.transform = 'scale(1)';
+                            e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))';
+                        }}
                     />
                 </div>
 
@@ -98,7 +112,7 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                {/* IZQUIERDA: LOGOS */}
+                {/* DERECHA: LOGOS */}
                 <div className="d-flex align-items-center justify-content-start" style={{ flex: '1', gap: '365px' }}>
                     <img
                         src="/assets/lunas/logo3.png"
@@ -106,10 +120,17 @@ export const Navbar = () => {
                         style={{
                             height: '80px',
                             filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
-                            transition: 'filter 0.3s ease'
+                            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                            transform: 'scale(1)'
                         }}
-                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
-                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                        onMouseEnter={(e) => {
+                            e.target.style.transform = 'scale(1.1)';
+                            e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.transform = 'scale(1)';
+                            e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))';
+                        }}
                     />
                     <img
                         src="/assets/lunas/logo4.png"
@@ -117,17 +138,22 @@ export const Navbar = () => {
                         style={{
                             height: '85px',
                             filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))',
-                            transition: 'filter 0.3s ease'
+                            transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                            transform: 'scale(1)'
                         }}
-                        onMouseEnter={(e) => e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))'}
-                        onMouseLeave={(e) => e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))'}
+                        onMouseEnter={(e) => {
+                            e.target.style.transform = 'scale(1.1)';
+                            e.target.style.filter = 'drop-shadow(0 0 12px rgba(255, 255, 255, 0.5))';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.transform = 'scale(1)';
+                            e.target.style.filter = 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.3))';
+                        }}
                     />
                 </div>
 
-                {/* DERECHA: LOGOS + USUARIO + LOGOUT */}
+                {/* DERECHA: USUARIO + LOGOUT */}
                 <div className="d-flex align-items-center justify-content-end" style={{ flex: '1', gap: '10px' }}>
-
-
                     <span className="nav-item nav-link text-white" style={{
                         background: 'rgba(0, 136, 169, 0.3)',
                         borderRadius: '20px',
@@ -138,10 +164,7 @@ export const Navbar = () => {
                     </span>
 
                     <button className="nav-item nav-link btn"
-                        onClick={() => {
-                            navigate('/login', { replace: true });
-                            dispatch({ type: types.logout });
-                        }}
+                        onClick={handleLogout}
                         style={{
                             background: 'rgba(220, 53, 69, 0.3)',
                             color: 'rgba(255, 255, 255, 0.8)',
@@ -162,7 +185,6 @@ export const Navbar = () => {
                         Logout
                     </button>
                 </div>
-
             </div>
         </nav>
     )
