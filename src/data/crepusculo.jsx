@@ -1,185 +1,205 @@
 export const twilightCharacters = [
-    // PROTAGONISTAS (vp-)
+    // PROTAGONISTS (vp-)
     {
         'id': 'vp-bella',
         'name': 'Bella Swan',
-        'affiliation': 'Cullen/Humanos',
-        'role': 'Protagonista',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Humana (luego vampira)',
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen/Humans',
+        'role': 'Main protagonist',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Human (later vampire)',
         'alias': 'Isabella Swan-Cullen'
     },
     {
         'id': 'vp-edward',
         'name': 'Edward Cullen',
-        'affiliation': 'Familia Cullen',
-        'role': 'Vampiro enamorado de Bella',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen Family',
+        'role': 'Vampire in love with Bella',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
         'alias': 'Edward Anthony Masen'
     },
     {
         'id': 'vp-jacob',
         'name': 'Jacob Black',
-        'affiliation': 'Manada de La Push',
-        'role': 'Lobizón y mejor amigo de Bella',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Lobizón',
+        'publisher': 'Protagonists',
+        'affiliation': 'La Push Pack',
+        'role': 'Werewolf and Bella\'s best friend',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Werewolf',
         'alias': 'Jake'
     },
     {
         'id': 'vp-carlisle',
         'name': 'Carlisle Cullen',
-        'affiliation': 'Familia Cullen',
-        'role': 'Líder y padre de la familia',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'El Médico Vampiro'
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen Family',
+        'role': 'Family leader and father figure',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Vampire Doctor'
     },
     {
         'id': 'vp-esme',
         'name': 'Esme Cullen',
-        'affiliation': 'Familia Cullen',
-        'role': 'Madre de la familia',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'El Corazón de los Cullen'
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen Family',
+        'role': 'Family mother figure',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Heart of the Cullens'
     },
     {
         'id': 'vp-alice',
         'name': 'Alice Cullen',
-        'affiliation': 'Familia Cullen',
-        'role': 'Vidente y hermana de Edward',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'La Clarividente'
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen Family',
+        'role': 'Clairvoyant and Edward\'s sister',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Seer'
     },
     {
         'id': 'vp-jasper',
         'name': 'Jasper Hale',
-        'affiliation': 'Familia Cullen',
-        'role': 'Experto en manipulación emocional',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'El Soldado'
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen Family',
+        'role': 'Emotional manipulation expert',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Soldier'
     },
     {
         'id': 'vp-rosalie',
         'name': 'Rosalie Hale',
-        'affiliation': 'Familia Cullen',
-        'role': 'Hermana de Edward',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'La Bella Inmortal'
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen Family',
+        'role': 'Edward\'s sister',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Immortal Beauty'
     },
     {
         'id': 'vp-charlie',
         'name': 'Charlie Swan',
-        'affiliation': 'Humanos',
-        'role': 'Padre de Bella',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Humano',
-        'alias': 'El Sheriff de Forks'
+        'publisher': 'Protagonists',
+        'affiliation': 'Humans',
+        'role': 'Bella\'s father',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Human',
+        'alias': 'The Sheriff of Forks'
     },
     {
         'id': 'vp-renesmee',
         'name': 'Renesmee Cullen',
-        'affiliation': 'Familia Cullen',
-        'role': 'Hija de Bella y Edward',
-        'first_appearance': 'Amanecer (2008)',
-        'species': 'Híbrida (vampira-humana)',
+        'publisher': 'Protagonists',
+        'affiliation': 'Cullen Family',
+        'role': 'Daughter of Bella and Edward',
+        'first_appearance': 'Breaking Dawn (2008)',
+        'species': 'Hybrid (vampire-human)',
         'alias': 'Nessie'
     },
 
-    // ANTAGONISTAS (vi-)
+    // ANTAGONISTS (vi-)
     {
         'id': 'vi-victoria',
         'name': 'Victoria',
-        'affiliation': 'Vampiros Nómadas',
-        'role': 'Vengadora de James',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'La Cazadora Roja'
+        'publisher': 'Antagonists',
+        'affiliation': 'Nomadic Vampires',
+        'role': 'James\' avenger',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Red Hunter'
     },
     {
         'id': 'vi-james',
         'name': 'James',
-        'affiliation': 'Vampiros Nómadas',
-        'role': 'Cazador de Bella',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'El Rastreador'
+        'publisher': 'Antagonists',
+        'affiliation': 'Nomadic Vampires',
+        'role': 'Bella\'s hunter',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Tracker'
     },
     {
         'id': 'vi-laurent',
         'name': 'Laurent',
-        'affiliation': 'Vampiros Nómadas',
-        'role': 'Ex-aliado de los Cullen',
-        'first_appearance': 'Crepúsculo (2005)',
-        'species': 'Vampiro',
-        'alias': 'El Traidor'
+        'publisher': 'Antagonists',
+        'affiliation': 'Nomadic Vampires',
+        'role': 'Former Cullen ally',
+        'first_appearance': 'Twilight (2005)',
+        'species': 'Vampire',
+        'alias': 'The Traitor'
     },
     {
         'id': 'vi-aro',
         'name': 'Aro',
-        'affiliation': 'Guardia Volturi',
-        'role': 'Líder de los Volturi',
-        'first_appearance': 'Luna Nueva (2006)',
-        'species': 'Vampiro',
-        'alias': 'El Juez Despiadado'
+        'publisher': 'Antagonists',
+        'affiliation': 'Volturi Guard',
+        'role': 'Leader of the Volturi',
+        'first_appearance': 'New Moon (2006)',
+        'species': 'Vampire',
+        'alias': 'The Ruthless Judge'
     },
     {
         'id': 'vi-caius',
         'name': 'Caius',
-        'affiliation': 'Guardia Volturi',
-        'role': 'Miembro de los Volturi',
-        'first_appearance': 'Luna Nueva (2006)',
-        'species': 'Vampiro',
-        'alias': 'El Sádico'
+        'publisher': 'Antagonists',
+        'affiliation': 'Volturi Guard',
+        'role': 'Volturi member',
+        'first_appearance': 'New Moon (2006)',
+        'species': 'Vampire',
+        'alias': 'The Sadistic One'
     },
     {
         'id': 'vi-marcus',
         'name': 'Marcus',
-        'affiliation': 'Guardia Volturi',
-        'role': 'Miembro de los Volturi',
-        'first_appearance': 'Luna Nueva (2006)',
-        'species': 'Vampiro',
-        'alias': 'El Indiferente'
+        'publisher': 'Antagonists',
+        'affiliation': 'Volturi Guard',
+        'role': 'Volturi member',
+        'first_appearance': 'New Moon (2006)',
+        'species': 'Vampire',
+        'alias': 'The Indifferent'
     },
     {
         'id': 'vi-jane',
         'name': 'Jane',
-        'affiliation': 'Guardia Volturi',
-        'role': 'Miembro con poder de dolor ilusorio',
-        'first_appearance': 'Luna Nueva (2006)',
-        'species': 'Vampiro',
-        'alias': 'La Torturadora'
+        'publisher': 'Antagonists',
+        'affiliation': 'Volturi Guard',
+        'role': 'Member with illusory pain power',
+        'first_appearance': 'New Moon (2006)',
+        'species': 'Vampire',
+        'alias': 'The Torturer'
     },
     {
         'id': 'vi-alec',
         'name': 'Alec',
-        'affiliation': 'Guardia Volturi',
-        'role': 'Gemelo de Jane',
-        'first_appearance': 'Luna Nueva (2006)',
-        'species': 'Vampiro',
-        'alias': 'El Privador de Sentidos'
+        'publisher': 'Antagonists',
+        'affiliation': 'Volturi Guard',
+        'role': 'Jane\'s twin',
+        'first_appearance': 'New Moon (2006)',
+        'species': 'Vampire',
+        'alias': 'The Sensory Depriver'
     },
     {
         'id': 'vi-demetri',
         'name': 'Demetri',
-        'affiliation': 'Guardia Volturi',
-        'role': 'Rastreador imparable',
-        'first_appearance': 'Luna Nueva (2006)',
-        'species': 'Vampiro',
-        'alias': 'El Perseguidor'
+        'publisher': 'Antagonists',
+        'affiliation': 'Volturi Guard',
+        'role': 'Unstoppable tracker',
+        'first_appearance': 'New Moon (2006)',
+        'species': 'Vampire',
+        'alias': 'The Pursuer'
     },
     {
         'id': 'vi-riley',
         'name': 'Riley Biers',
-        'affiliation': 'Ejército de Recién Nacidos',
-        'role': 'Líder del ejército de recién convertidos',
+        'publisher': 'Antagonists',
+        'affiliation': 'Newborn Army',
+        'role': 'Leader of the newborn vampires',
         'first_appearance': 'Eclipse (2007)',
-        'species': 'Vampiro (Recién Nacido)',
-        'alias': 'El Segundo al Mando de Victoria'
+        'species': 'Vampire (Newborn)',
+        'alias': 'Victoria\'s Second-in-Command'
     }
 ];
