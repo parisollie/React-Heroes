@@ -11,7 +11,19 @@ export const HeroList = ({ publisher }) => {
 
     return (
         //V-487,Paso 1.20
-        <div className="card-columns animate__animated animate__fadeIn">
+        <div className="card-columns animate__animated animate__fadeIn"
+            style={{
+                // maxWidth: 540,
+                background: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '15px',
+                overflow: 'hidden',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
+                transition: 'all 0.3s ease'
+            }}
+
+        >
             {
                 twilightCharacters.map(tw => (
                     //Paso 1.22
