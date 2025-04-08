@@ -1,6 +1,7 @@
 import { heroes } from '../data/heroes';
 
-//Pasp 1.15
+//Pasp 1.15, descartarlo
+//Paso 4.26
 export const getHeroesByName = (name = '') => {
 
     if (name === '') {

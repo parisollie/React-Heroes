@@ -33,7 +33,7 @@ export const Navbar = () => {
                     >
                         DC
                     </NavLink>
-                    
+                    {/**Paso 2.15 */}
                     <NavLink 
                         className={({ isActive }) => 
                             `nav-item nav-link ${isActive ? 'active' : ''}`

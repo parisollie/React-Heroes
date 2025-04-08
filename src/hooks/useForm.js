@@ -1,24 +1,24 @@
-// import { useState } from 'react';
+import { useState } from 'react';
+
+//Paso 2.13
+export const useForm = (initialState = {}) => {
+
+    const [values, setValues] = useState(initialState);
+
+    const reset = () => {
+        setValues(initialState);
+    }
 
 
-// export const useForm = ( initialState = {} ) => {
-    
-//     const [values, setValues] = useState(initialState);
+    const handleInputChange = ({ target }) => {
 
-//     const reset = () => {
-//         setValues( initialState );
-//     }
+        setValues({
+            ...values,
+            [target.name]: target.value
+        });
 
+    }
 
-//     const handleInputChange = ({ target }) => {
+    return [values, handleInputChange, reset];
 
-//         setValues({
-//             ...values,
-//             [ target.name ]: target.value
-//         });
-
-//     }
-
-//     return [ values, handleInputChange, reset ];
-
-// }
+}

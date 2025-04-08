@@ -5,8 +5,9 @@ import { HeroCard } from './HeroCard';
 //V-486,paso 1.11
 export const HeroList = ({ publisher }) => {
     //Paso 1.17
-    const heroes = getHeroesByPublisher(publisher);
-    //const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
+    //const heroes = getHeroesByPublisher(publisher);
+    //Paso 2.3, usamos UseMemo, se dispara si el publisher cambia
+    const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
 
     return (
         //V-487,Paso 1.20
